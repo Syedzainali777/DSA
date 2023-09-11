@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="search" placeholder="Enter the value">
+    <button onclick="searchEl()">search element</button>
+
+    <script>
+
+        function searchEl() {
+            let data = [15, 12, 44, 45, 14, 13, 15, 17, 55];
+            let item = parseInt(document.getElementById('search').value);  // Convert string to number for comparison
+            let value = undefined;
+            let index;
+
+            for (index = 0; index <= data.length - 1; index++) {
+                if (data[index] === item) {
+                    value = index;
+                    break;
+                }
+            }
+
+            if (value !== undefined) {
+                document.write("Found at index:", value);
+            } else {
+                console.warn("Item not found");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

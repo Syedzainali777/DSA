@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="position" placeholder="Enter the value">
+    <button onclick="computeFactorial()">Find factorial</button>
+
+    <script>
+
+        function factorial(item) {
+            if (item == 0) {
+                return 1;
+            }
+            return item * factorial(item - 1);
+        }
+
+        function computeFactorial() {
+            let number = parseInt(document.getElementById('position').value);
+            let result = factorial(number);
+            alert(result);
+        }
+
+
+    </script>
+</body>
+
+</html>

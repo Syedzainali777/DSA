@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let data = [12, 78, 44, 45, 14, 13, 15, 17, 55];
+        // for (let index = 0; index < data.length; index++) {
+        //     document.write(data[index]);
+        // };
+        // function getElement() {
+        //     let el = document.getElementById('element').value;
+        //     if (el < data.length) {
+        //         alert(data[el]);
+        //     }
+        //     else {
+        //         alert('Please enter valid number')
+        //     }
+        // }
+
+        const students = [
+            { name: 'Quincy', grade: 96 },
+            { name: 'Jason', grade: 84 },
+            { name: 'Alexis', grade: 100 },
+            { name: 'Sam', grade: 65 },
+            { name: 'Katie', grade: 90 }
+        ];
+
+        const studentGrades = students.filter(student => student.grade >= 90);
+        return studentGrades; // [ { name: 'Quincy', grade: 96 }, { name: 'Alexis', grade: 100 }, { name: 'Katie', grade: 90 } ]
+
+
+
+
+    </script>
+</body>
+<input type="text" id="element">
+<button onclick="getElement()">Get element</button>
+
+</html>
